@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TODO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Att göra</h1>
+    </header>
+    <main>
+        <table id="todo-table">
+            <caption id="todo-caption">Saker du skall göra.</caption>
+            <thead>
+                <tr>
+                    <th>Titel</th>
+                    <th>Beskrivning</th>
+                    <th>Avklarad</th>
+                </tr>
+            </thead>
+            <tbody id="todo-list">
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Antal uppgifter</th>
+                    <th>Antal avklarade</th>
+                    <th>Andel avklarade</th>
+                </tr>
+                <tr>
+                    <td id="todo-task-count">0</td>
+                    <td id="todo-completed-count">0</td>
+                    <td id="todo-completed-percent">0%</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+</body>
+</html>
