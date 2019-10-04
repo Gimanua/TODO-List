@@ -26,6 +26,11 @@ export default class Utility{
         if(options.content){
             element.innerHTML = options.content;
         }
+        if(options.events){
+            options.events.forEach(e => {
+                element.addEventListener(e.name, e.callback);
+            });
+        }
         return element;
     }
 }

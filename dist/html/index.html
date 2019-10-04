@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,18 +9,45 @@
     <link rel="stylesheet" href="css/style.css">
     <script defer src="main.js"></script>
 </head>
+
 <body>
     <header>
         <h1>Att göra</h1>
     </header>
     <main>
+        <form id="insert-task">
+            <h2>Lägg till en ny uppgift här:</h2>
+
+            <label for="post-task-title">Titel</label>
+            <input type="text" id="post-task-title" required>
+
+            <br>
+            <label for="completion">Avklarad?</label>
+
+            <div id="completion">
+                <input type="radio" id="false" name="completed" checked>
+                <label for="false">Nej</label>
+
+                <input type="radio" id="true" name="completed">
+                <label for="true">Ja</label>
+
+                <input type="button" value="Lägg till" id="post-task">
+            </div>
+        </form>
+        <form id="change-list-name">
+            <h2>Byt namn på listan här:</h2>
+
+            <label for="new-list-name">Nytt namn: </label>
+            <input type="text" id="new-list-name">
+            <input type="button" value="Uppdatera" id="commit-new-list-name">
+        </form>
         <table id="todo-table">
             <caption id="todo-caption">Saker du skall göra.</caption>
             <thead>
                 <tr>
                     <th>Titel</th>
-                    <th>Beskrivning</th>
                     <th>Avklarad</th>
+                    <th>Ny titel</th>
                 </tr>
             </thead>
             <tbody id="todo-list">
@@ -39,4 +67,5 @@
         </table>
     </main>
 </body>
+
 </html>
